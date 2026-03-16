@@ -1,8 +1,14 @@
 package com.workintech.pool;
 
+import java.util.Locale;
+
 public class Rectangle {
-     double width;
-     double length ;
+     private double width;
+     private double length;
+
+     static {
+         Locale.setDefault(Locale.US);
+     }
 
      public Rectangle(double width, double length ) {
          if (width < 0) {

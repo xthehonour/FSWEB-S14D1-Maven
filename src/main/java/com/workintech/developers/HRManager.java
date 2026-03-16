@@ -21,7 +21,7 @@ public class HRManager extends Employee {
 
     @Override
     public void work() {
-        System.out.println("HRManager is managing developers");
+        System.out.println("HRManager starts to working");
         setSalary(getSalary() + 5000);
     }
 

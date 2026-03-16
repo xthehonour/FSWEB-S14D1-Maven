@@ -1,13 +1,20 @@
 package com.workintech.cylinder;
 
+import java.util.Locale;
+
 public class Circle {
-    public  double radius;
+    private double radius;
+
+    static {
+        Locale.setDefault(Locale.US);
+    }
 
     public Circle(double radius) {
         if (radius < 0) {
             this.radius = 0;
-        }else
+        } else {
             this.radius = radius;
+        }
     }
 
     public double getRadius() {
@@ -19,6 +26,6 @@ public class Circle {
     }
 
     public double getArea() {
-        return radius * radius * Math.PI;
+        return Math.PI * radius * radius;
     }
 }
